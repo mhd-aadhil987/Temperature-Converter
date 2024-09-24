@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #b00217, yellow, #fe2a00,#00d4db,#0083e1);
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+h2{
+    color: rebeccapurple;
+}
+
+form{
+    background-color: bisque;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(172, 166, 159);
+}
+
+#numberBox{
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+label{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    background-color: brown;
+    color: white;
+    font-size: 1em;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 5px 5px 25px rgb(172, 166, 159);
+    font-weight: bold;
+}
+
+#result{
+    font-weight: bold;
+}
+
+/* responsive for mobile */
+
+@media (max-width: 600px) {
+    form{
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    #numberBox{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9em; 
+        padding: 8px 30px; 
+    }
+}
